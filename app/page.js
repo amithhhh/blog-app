@@ -11,6 +11,9 @@ export default function Home() {
         <button type="submit" className="ml-4 bg-indigo-700 px-8 py-2 rounded-lg text-white font-mono cursor-pointer hover:bg-indigo-800" onClick={(e) => e.preventDefault()}>Search</button>
       </form>
       <BlogBox />
+      <BlogBox />
+      <BlogBox />
+      <BlogBox />
     </div>
   );
 }
