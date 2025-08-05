@@ -16,7 +16,7 @@ const page = () => {
                         <input type='password' id='password' className='border-2 border-gray-400 rounded-md px-4 py-2 focus:outline-non focus:ring-2 focus:ring-purple-500 transition duration-200 mb-2' />
                         <label htmlFor='password2' className='text-sm font-medium text-gray-700b cursor-pointer'>Confirm Password</label>
                         <input type='password' id='password2' className='border-2 border-gray-400 rounded-md px-4 py-2 focus:outline-non focus:ring-2 focus:ring-purple-500 transition duration-200 mb-2' />
-                        <button type='submit' className='bg-indigo-700 h-9 rounded-md text-white font-semibold font-mono hover:bg-indigo-800 transition duration-200 cursor-pointer'>Login</button>
+                        <button type='submit' className='bg-indigo-700 h-9 rounded-md text-white font-semibold font-mono hover:bg-indigo-800 transition duration-200 cursor-pointer'>Sign Up</button>
                     </form>
                 </div>
                 <div className='flex justify-center'>

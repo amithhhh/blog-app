@@ -18,7 +18,7 @@ const page = () => {
                     </form>
                 </div>
                 <div className='flex justify-center'>
-                    <p>Don&apos;t have an account?<Link href="/register"><span className='cursor-pointer text-indigo-700'>register</span></Link></p>
+                    <p>Don&apos;t have an account? <Link href="/register"><span className='cursor-pointer text-indigo-700'>register</span></Link></p>
                 </div>
             </div>
         </div>
