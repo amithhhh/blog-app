@@ -1,5 +1,47 @@
 @import "tailwindcss";
 
+/* styles/globals.css */
+
+.ProseMirror {
+  min-height: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ProseMirror:focus {
+  border-color: #4f46e5; /* Indigo-600 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Indigo focus ring */
+}
+
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.ProseMirror h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ProseMirror h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 1.25rem;
+}
+
+.ProseMirror li {
+  margin-bottom: 0.5em;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
