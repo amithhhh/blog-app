@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex flex-row flex-wrap gap-9">
         {
           [1, 2, 3, 4].map((item, index) => (
-            <BlogBox />
+            <BlogBox key={item} id={item} />
           ))
         }
       </div>
