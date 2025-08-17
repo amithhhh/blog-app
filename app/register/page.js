@@ -1,30 +1,80 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 const page = () => {
-    return (
-        <div className='flex items-center justify-center bg-gray-50 h-150'>
-            <div className='w-full max-w-md shadow-lg rounded-lg flex flex-col p-2'>
-                <div className='flex items-center justify-center'>
-                    <h2 className='font-mono text-4xl font-bold text-indigo-600 tracking-tight'>Sign Up</h2>
-                </div>
-                <div>
-                    <form method='POST' className='flex flex-col gap-2 mb-4 px-4 py-2'>
-                        <label htmlFor='username' className='text-sm font-medium text-gray-700b cursor-pointer'>Username</label>
-                        <input type='text' id='username' className='border-2 border-gray-400 rounded-md px-4 py-2 focus:outline-non focus:ring-2 focus:ring-purple-500 transition duration-200' />
-                        <label htmlFor='password' className='text-sm font-medium text-gray-700b cursor-pointer'>Password</label>
-                        <input type='password' id='password' className='border-2 border-gray-400 rounded-md px-4 py-2 focus:outline-non focus:ring-2 focus:ring-purple-500 transition duration-200 mb-2' />
-                        <label htmlFor='password2' className='text-sm font-medium text-gray-700b cursor-pointer'>Confirm Password</label>
-                        <input type='password' id='password2' className='border-2 border-gray-400 rounded-md px-4 py-2 focus:outline-non focus:ring-2 focus:ring-purple-500 transition duration-200 mb-2' />
-                        <button type='submit' className='bg-indigo-700 h-9 rounded-md text-white font-semibold font-mono hover:bg-indigo-800 transition duration-200 cursor-pointer'>Sign Up</button>
-                    </form>
-                </div>
-                <div className='flex justify-center'>
-                    <p>Already have an account? <Link href="/login"><span className='cursor-pointer text-indigo-700'>login</span></Link></p>
-                </div>
-            </div>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black p-4">
+      <div className="w-full max-w-md bg-gray-800 border border-gray-700 shadow-2xl rounded-xl flex flex-col p-8 backdrop-blur-sm">
+        <div className="flex items-center justify-center mb-6">
+          <h2 className="font-mono text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent tracking-tight">
+            Sign Up
+          </h2>
         </div>
-    )
-}
+        <div>
+          <form method="POST" className="flex flex-col gap-4 mb-6">
+            <div className="space-y-2">
+              <label
+                htmlFor="username"
+                className="text-sm font-medium text-gray-300 cursor-pointer block"
+              >
+                Username
+              </label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                className="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 hover:border-gray-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label
+                htmlFor="password"
+                className="text-sm font-medium text-gray-300 cursor-pointer block"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                className="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 hover:border-gray-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label
+                htmlFor="password2"
+                className="text-sm font-medium text-gray-300 cursor-pointer block"
+              >
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm your password"
+                className="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 hover:border-gray-500 mb-2"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold font-mono py-3 rounded-lg transition duration-200 cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+        <div className="flex justify-center">
+          <p className="text-gray-400">
+            Already have an account?{" "}
+            <Link href="/login">
+              <span className="cursor-pointer text-blue-400 hover:text-blue-300 transition duration-200 font-medium">
+                login
+              </span>
+            </Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default page
+export default page;
